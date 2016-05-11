@@ -5,7 +5,7 @@ In this repository we store raw data for the [Mod ell modular forms database]  f
 Each line in a data file will contain a single comma-separated list (enclosed in square brackets) correspond to one mod-ell modular form. The elements of the list are as follows, in this exact order:
 
 * **char** (integer): the characteristic of the base ring of the form, a prime ell
-* **dimension** (integer): dimension of base field of form over prime field
+* **degree** (integer): degree of base field over prime field
 * **level** (integer): level of the form
 * **conductor** (integer): minimal level that carries the representation attached to the form
 * **minweight** (integer): minimal weight that this particular form appears in in this level.
