@@ -2,6 +2,11 @@
 
 In this repository we store raw data for the [Mod ell modular forms database]  for the [LMFDB](https://github.com/LMFDB/lmfdb).
 
+### Contents of this document
+1. Description of the data format for mod ell modular forms. 
+2. Description of the labels for ``Dirichlet's characters" modulo ell. 
+
+### 1. Data format for mod ell modular forms
 Each line in a data file will contain a single comma-separated list (enclosed in square brackets) correspond to one mod-ell modular form. The elements of the list are as follows, in this exact order:
 
 * **char** (integer): the characteristic of the base ring of the form, a prime ell
@@ -28,5 +33,14 @@ Example of a form not defined over F_p:
 ```
 [11, 2, 5, "", 8, "1", [[ 5, 1 ]], 51, ["0", "1", "4*x + 2", "x + 8", "3*x + 9", "7", "6*x + 8", "4*x + 8", "7*x + 2", "9*x + 9", "6*x + 3", "5*x + 7", "x", "10*x + 1", "5*x + 6", "7*x + 1", "3*x + 6", "5*x + 4", "1", "7*x + 6", "10*x + 8", "x + 1", "8*x + 7", "7*x", "9*x + 2", "5", "8*x + 10", "9*x + 4", "9*x + 4", "2*x + 1", "9*x + 1", "9*x + 10", "7*x + 7", "x + 2", "7*x + 1", "6*x + 1", "7*x + 5", "9*x + 6", "7*x", "10", "5*x + 3", "5*x + 7", "5", "2*x + 6", "5*x", "8*x + 8", "5*x + 10", "4", "9*x + 9", "7*x + 4", "9*x + 10"]]
 ```
+
+
+### 2. Label description for mod-ell ``Dirichlet characters." 
+See file [Schaeffer_chars.pdf] in this repository with a description of adapting the Conrey Dirichlet character notation to (F_ell)bar. 
+The labels will look as follows: "ell.q.n" means character (Z/qZ)* -> (F_ell)-bar* corresponding to chi_q(n, -) in the Conrey notation with the Conway system of generators taking the place of exp(-).
+
+
+
+
 
 File prepared by Anna Medvedovsky.
