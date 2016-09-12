@@ -28,8 +28,8 @@ The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest w
 * **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight and smalles Galois orbit (alphabetical order). This consists of 
     * (int) the weight of the newform, 
     * (string) the label of the newform (level.weight.m.galois_orbit, where the Dirichlet character considered if level.m)
-    * (string) the polynomial giving the Hecke eigenvalue field, 
-    * (string) the generators of the ideal used for the reduction.
+    * (string) the polynomial giving the Hecke eigenvalue field.
+    * (string) the ideal used for the reduction, in terms of generators. Ex: "(3, x + 1)"
 * **dirchar** (string): label of the mod ell Dirichlet character, see part 3. 
 * **atkinlehner** (list of two-element lists of integers): [[int(p^e), int(W_{p^e})] for p^e exactly dividing N] 
 * **n_coeffs** (integer): the number of Fourier coefficients
