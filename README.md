@@ -6,7 +6,7 @@ In this repository we store raw data for the collection [modlmf] in the database
 ### Contents of this document
 1. Description of the data format for mod ell modular forms. 
 2. Description of the labels for mod ell modular forms.
-2. Description of the labels for ``Dirichlet's characters" modulo ell. 
+2. Description of the labels for "Dirichlet's characters" modulo ell. 
 
 ### 1. Data format for mod ell modular forms
 
