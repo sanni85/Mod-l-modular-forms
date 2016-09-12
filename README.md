@@ -34,7 +34,7 @@ The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest w
 * **atkinlehner** (list of two-element lists of integers): [[int(p^e), int(W_{p^e})] for p^e exactly dividing N] 
 * **n_coeffs** (integer): the number of Fourier coefficients
 * **coeffs** (list of strings): coefficients of the q-expansion as strings ["a_0", "a_1", ... , "a_(n_coeffs - 1)"].
-* **ordinary**(boolean): 1 means ordinary
+* **ordinary**(boolean): 1 means ordinary (a_ell != 0) and 0 for non-ordinary
 * **min_theta_weight** (integer): minimum weight in a theta cycle
 * **theta_cycle**(list of tuples [int, str]): theta cycle, formattes as list of [weight, label of the Galois orbit]
 
