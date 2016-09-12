@@ -5,6 +5,7 @@ In this repository we store raw data for the collection [modlmf] in the database
 
 ### Contents of this document
 1. Description of the data format for mod ell modular forms. 
+2. Description of the labels for mod ell modular forms.
 2. Description of the labels for ``Dirichlet's characters" modulo ell. 
 
 ### 1. Data format for mod ell modular forms
@@ -41,8 +42,14 @@ Example of a form defined over a non-trivial extension of F_p:
 
 ```
 
+### 2. Label for an orbit of mod ell modular forms. 
 
-### 2. Label description for mod-ell ``Dirichlet characters." 
+The label of a Galois orbit of mod ell modular forms is given by
+->**finite_field . level . weight . m . letter**<-
+where finite_field is given by the string characterist+e+degree (unless the degree is 1, so the finite_field is given by the characteristic), level and weight are as above, m comes from the label of the mod ell Dirichlet label which is characteristic.level.m, and the letter denotes the Galois orbit, ordered looking at the q_expansion.
+
+
+### 3. Label description for mod-ell ``Dirichlet characters." 
 
 See file [Schaeffer_chars.pdf] and annotated version in this repository with a description of adapting the Conrey Dirichlet character notation to (F_ell)bar. 
 The labels will look as follows: "ell.q.n" means character (Z/qZ)* -> (F_ell)-bar* corresponding to chi_q(n, -) in the Conrey notation with the Conway system of generators taking the place of exp(-). If ell does not divide the value of the Euler phi function of q, then the part of the label after the characteristic corresponds to the characteristic zero labels. Otherwise check the file for more information.
