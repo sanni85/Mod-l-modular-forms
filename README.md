@@ -65,7 +65,7 @@ where
 * **level** is the minimal level as above
 * **weight** is the weight_grading (modulo ell -1)
 * **dirchar_index** comes from the label of the mod ell Dirichlet label which is characteristic.level.m
-* the **letter** denotes the Galois orbit, ordered looking at the q_expansion.
+* the **letter** denotes the Galois orbit, ordered looking at the q_expansion (at the moment this is relies on the code which computes the data).
 
 
 ### 3. Label description for mod-ell "Dirichlet characters." 
