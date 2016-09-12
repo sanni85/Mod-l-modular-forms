@@ -47,7 +47,7 @@ The label of a Galois orbit of mod ell modular forms is given by
 
     finite_field . level . weight . dirchar_index . letter
   
-where finite_field is given by the string characterist+e+degree (unless the degree is 1, so the finite_field is given by the characteristic), level and weight are as above, m comes from the label of the mod ell Dirichlet label which is characteristic.level.m, and the letter denotes the Galois orbit, ordered looking at the q_expansion.
+where finite_field is given by the string characterist+e+degree (unless the degree is 1, so the finite_field is given by the characteristic), level and weight are as above, dirchar_index comes from the label of the mod ell Dirichlet label which is characteristic.level.m, and the letter denotes the Galois orbit, ordered looking at the q_expansion.
 
 
 ### 3. Label description for mod-ell "Dirichlet characters." 
