@@ -18,7 +18,7 @@ Each line in a data file will contain a single comma-separated list (enclosed in
 * **weight_grading** (integer): weight of the form modulo ell-1
 * **reducible** (list [string, integer, string, integer, integer]): [dirichlet character label, power of cyclotomic character,dirichlet character label, power of cyclotomic character, eisenstein_weight] this means that the associated representation is reducible, given by the specified characters. The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight, this is filled only if reducible is filled
 * **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight. This consists of the weight of the newform, the label of the newform (level.weight.m.galois_orbit, where the Dirichlet character considered if level.m), the polynomial giving the Hecke eigenvalue field (string), the generators of the ideal used for the reduction.
-* **dirchar** (string): label of the mod ell Dirichlet character, see part 2. 
+* **dirchar** (string): label of the mod ell Dirichlet character, see part 3. 
 * **atkinlehner** (list of two-element lists of integers): [[int(p^e), int(W_{p^e})] for p^e exactly dividing N] 
 * **n_coeffs** (integer): the number of Fourier coefficients
 * **coeffs** (list of strings): coefficients of the q-expansion as strings ["a_0", "a_1", ... , "a_(n_coeffs - 1)"].
@@ -41,11 +41,11 @@ Example of a form defined over a non-trivial extension of F_ell:
 
 ```
 
-### 2. Label for an orbit of mod ell modular forms. 
+### 2. Label for a Galois orbit of mod ell modular forms. 
 
 The label of a Galois orbit of mod ell modular forms is given by
 
-    finite_field . level . weight . m . letter
+    finite_field . level . weight . dirchar_index . letter
   
 where finite_field is given by the string characterist+e+degree (unless the degree is 1, so the finite_field is given by the characteristic), level and weight are as above, m comes from the label of the mod ell Dirichlet label which is characteristic.level.m, and the letter denotes the Galois orbit, ordered looking at the q_expansion.
 
