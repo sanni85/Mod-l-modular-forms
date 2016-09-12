@@ -16,10 +16,13 @@ Each line in a data file will contain a single comma-separated list (enclosed in
 * **deg** (integer): degree of base field over prime field
 * **level** (integer): minimal level of the form, that is the smallest level in which the eigenvalue system does occurr. If the associated representation is irreducible this is the Artin conductor away from l.
 * **weight_grading** (integer): weight of the form modulo ell-1
-* **reducible** (list [string, integer, string, integer, integer]): this means that the associated representation is reducible.
-Please set as **""** in the **irreducible** case. This is the format
+* **reducible** (list [string, integer, string, integer, integer]): this means that the associated representation is reducible of the form 
 <p align="center">
-[dirchar_label, power of cyclotomic, dirchar_label, power of cyclotomic, eisenstein_weight] 
+chi_1 cycl^a + chi_2 cycl^b, 
+</p>
+where chi_1, chi_2 are mod ell Dirichlet characters and cycl is the mod ell cyclotomic character. Please set as **""** in the **irreducible** case. This is the format
+<p align="center">
+[dirchar_label(chi_1), power of cyclotomic a, dirchar_label(chi_2), power of cyclotomic b, eisenstein_weight] 
 </p>
 The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight.
 * **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight. This consists of 
