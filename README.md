@@ -24,13 +24,15 @@ where chi_1, chi_2 are mod ell Dirichlet characters and cycl is the mod ell cycl
 <p align="center">
 [dirchar_label(chi_1), power of cyclotomic a, dirchar_label(chi_2), power of cyclotomic b, eisenstein_weight] 
 </p>
+DO YOU MEAN THE SHORT LABEL OR THE FULL LABEL OF THE CHARACTER? 
+</p>
 The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight.
 * **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight and smalles Galois orbit (alphabetical order). This consists of 
     * (int) the weight of the newform, 
     * (string) the label of the newform (level.weight.m.galois_orbit, where the Dirichlet character considered if level.m)
     * (string) the polynomial giving the Hecke eigenvalue field.
-    * (string) the ideal used for the reduction, in terms of generators. Ex: "(3, x + 1)"
-* **dirchar** (string): label of the mod ell Dirichlet character, see part 3. 
+    * (string) THE IDEAL USED FOR THE REDUCTION, IN TERMS OF GENERATORS. Ex: "(3, x + 1)", WHERE x SATISFIED THE POLYNOMIAL IN THE PREVIOUS FIELD.
+* **dirchar** (string): label of the mod ell Dirichlet character, see part 3. DO YOU MEAN THE SHORT LABEL ("1") OR THE LONG LABEL ("ell.N.1")?
 * **atkinlehner** (list of two-element lists of integers): [[int(p^e), int(W_{p^e})] for p^e exactly dividing N] 
 * **n_coeffs** (integer): the number of Fourier coefficients
 * **coeffs** (list of strings): coefficients of the q-expansion as strings ["a_0", "a_1", ... , "a_(n_coeffs - 1)"].
