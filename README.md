@@ -18,7 +18,7 @@ Each line in a data file will contain a single comma-separated list (enclosed in
 * **weight_grading** (integer): weight of the form modulo ell-1
 * **reducible** (list [string, integer, string, integer, integer]): this means that the associated representation is reducible of the form 
 <p align="center">
-chi_1 cycl^a + chi_2 cycl^b, 
+chi_1 cycl^a + chi_2 cycl^b,                  a<b
 </p>
 where chi_1, chi_2 are mod ell Dirichlet characters and cycl is the mod ell cyclotomic character. Please set as **""** in the **irreducible** case. This is the format
 <p align="center">
