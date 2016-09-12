@@ -14,8 +14,6 @@ Each line in a data file will contain a single comma-separated list (enclosed in
 * **characteristic** (integer): the characteristic of the base ring of the form, a prime ell
 * **deg** (integer): degree of base field over prime field
 * **level** (integer): minimal level of the form, that is the smallest level in which the eigenvalue system does occurr
-
-
 * **weight_grading** (integer): weight of the form modulo ell-1
 * **reducible** (list [string, integer, string, integer]): [dirichlet character label, power of cyclotomic character, etc] this means that the associated representation is reducible
 * **eisenstein_weight**(integer): minimal weight of the Eisenstein lift of smallest weight, this is filled only if reducible is filled
@@ -31,7 +29,7 @@ Each line in a data file will contain a single comma-separated list (enclosed in
 We insist that all strings be enclosed in straight double quotes, "like so". 
 All unknown fields (whether integers or strings) should be entered as "".
 
-Formatting of the Fourier coefficients: each coefficient is a string representing an element of F_(char^d), written as a polynomial in x, where x is a Conway generator of F_(char^d).
+Formatting of the Fourier coefficients: each coefficient is a string representing an element of F_(ell^d), written as a polynomial in x, where x is a Conway generator of F_(ell^d).
 
 Example:  
 ```
