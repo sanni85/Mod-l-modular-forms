@@ -25,7 +25,7 @@ where chi_1, chi_2 are mod ell Dirichlet characters and cycl is the mod ell cycl
 [dirchar_label(chi_1), power of cyclotomic a, dirchar_label(chi_2), power of cyclotomic b, eisenstein_weight] 
 </p>
 The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight.
-* **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight. This consists of 
+* **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight and smalles Galois orbit (alphabetic order). This consists of 
     * (int) the weight of the newform, 
     * (string) the label of the newform (level.weight.m.galois_orbit, where the Dirichlet character considered if level.m)
     * (string) the polynomial giving the Hecke eigenvalue field, 
