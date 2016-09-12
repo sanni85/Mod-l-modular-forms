@@ -14,11 +14,10 @@ Each line in a data file will contain a single comma-separated list (enclosed in
 
 * **characteristic** (integer): the characteristic of the base ring of the form, a prime ell
 * **deg** (integer): degree of base field over prime field
-* **level** (integer): minimal level of the form, that is the smallest level in which the eigenvalue system does occurr
+* **level** (integer): minimal level of the form, that is the smallest level in which the eigenvalue system does occurr. If the associated representation is irreducible this is the Artin conductor away from l.
 * **weight_grading** (integer): weight of the form modulo ell-1
-* **reducible** (list [string, integer, string, integer]): [dirichlet character label, power of cyclotomic character, etc] this means that the associated representation is reducible
-* **eisenstein_weight**(integer): minimal weight of the Eisenstein lift of smallest weight, this is filled only if reducible is filled
-* **cuspidal**(list [integer, string, string, string]): description of the cuspidal lift of smallest weight. This consists of the weight of the newform, the label of the newform (level.weight.m.galois_orbit, where the Dirichlet character considered if level.m), the polynomial giving the Hecke eigenvalue field (string), the generators of the ideal used for the reduction.
+* **reducible** (list [string, integer, string, integer, integer]): [dirichlet character label, power of cyclotomic character,dirichlet character label, power of cyclotomic character, eisenstein_weight] this means that the associated representation is reducible, given by the specified characters. The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight, this is filled only if reducible is filled
+* **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight. This consists of the weight of the newform, the label of the newform (level.weight.m.galois_orbit, where the Dirichlet character considered if level.m), the polynomial giving the Hecke eigenvalue field (string), the generators of the ideal used for the reduction.
 * **dirchar** (string): label of the mod ell Dirichlet character, see part 2. 
 * **atkinlehner** (list of two-element lists of integers): [[int(p^e), int(W_{p^e})] for p^e exactly dividing N] 
 * **n_coeffs** (integer): the number of Fourier coefficients
