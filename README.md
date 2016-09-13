@@ -24,10 +24,10 @@ where chi_1, chi_2 are mod ell Dirichlet characters and cycl is the mod ell cycl
 <p align="center">
 [dirchar_label(chi_1), power of cyclotomic a, dirchar_label(chi_2), power of cyclotomic b, eisenstein_weight] 
 </p>
-DO YOU MEAN THE SHORT LABEL OR THE FULL LABEL OF THE CHARACTER? 
-</p>
-The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight.
-</p>
+
+   The dirchar_label is the **full** label of the character.
+   The eisenstein_weight is the minimal weight of the Eisenstein lift of smallest weight.
+
 Please set as **""** in the **irreducible** case.
 
 * **cuspidal_lift**(list [integer, string, string, string]): description of the characteristic zero cuspidal lift of smallest weight and smalles Galois orbit (alphabetical order). This consists of 
