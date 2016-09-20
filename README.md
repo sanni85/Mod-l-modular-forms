@@ -75,5 +75,9 @@ where
 ### 3. Label description for mod-ell "Dirichlet characters." 
 
 See file [Schaeffer_chars.pdf] and annotated version in this repository with a description of adapting the Conrey Dirichlet character notation to (F_ell)bar. 
-The labels will look as follows: "ell.q.n" means character (Z/qZ)* -> (F_ell)-bar* corresponding to chi_q(n, -) in the Conrey notation with the Conway system of generators taking the place of exp(-). If ell does not divide the value of the Euler phi function of q, then the part of the label after the characteristic corresponds to the characteristic zero labels. Otherwise check the file for more information.
+The labels will look as follows: 
+<p align="center" ><b>
+ell . q . n 
+</b></p>  
+and it is associated to a character (Z/qZ)* -> (F_ell)-bar* corresponding to chi_q(n, -) in the Conrey notation with the Conway system of generators taking the place of exp(-). If ell does not divide the value of the Euler phi function of q, then the part of the label after the characteristic corresponds to the characteristic zero labels. Otherwise check the file for more information.
 
