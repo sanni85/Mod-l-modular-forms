@@ -62,14 +62,14 @@ Examples:
 The label of a Galois orbit of mod ell modular forms is given by
 
 <p align="center" ><b>
-finite_field . level . weight . dirchar_index . letter
+finite_field . level . weight . dirchar_index . number
 </b></p>  
 where 
 * **finite_field** is given by the string characterist+e+degree (unless the degree is 1, so the finite_field is given by the characteristic)
 * **level** is the minimal level as above
 * **weight** is the weight_grading (modulo ell -1)
 * **dirchar_index** comes from the label of the mod ell Dirichlet label which is characteristic.level.m
-* the **letter** denotes the Galois orbit, ordered looking at the q_expansion (at the moment this is relies on the code which computes the data).
+* the **number** denotes the Galois orbit, ordered looking at the q_expansion (at the moment this is relies on the code which computes the data).
 
 
 ### 3. Label description for mod-ell "Dirichlet characters." 
